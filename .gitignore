@@ -1,0 +1,12 @@
+#main directory files
+readme.gdoc
+SSEF_Abstract.gdoc
+SSEF_Final_Report.gdoc
+SSEF_Project_Report.gdoc
+SSEF_Research_Plan.gdoc
+
+#ignore the following folders for large datasets
+/augment
+/code/dec-jan-deprecated-files
+/code/16-18-dec
+/dataset
