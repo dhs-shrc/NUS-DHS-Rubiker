@@ -10,3 +10,10 @@ SSEF_Research_Plan.gdoc
 /code/dec-jan-deprecated-files
 /code/16-18-dec
 /dataset
+
+
+
+#ignore files for the catkin_rs
+/catkin_ws/build
+/catkin_ws/devel
+/src/CMakeLists.txt
