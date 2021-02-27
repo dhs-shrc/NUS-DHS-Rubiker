@@ -1,0 +1,29 @@
+#include <ros/ros.h>
+#include <wiringPi.h>
+
+#define LED_PIN 25 // change pin number here
+
+int main (int argc, char **argv)
+{
+    ros::init(argc, argv, "pid1");
+                 ros::NodeHandle nh;
+
+    wiringPiSetupGpio();
+    pinMode(LED_PIN, OUTPUT);
+    ROS_INFO("GPIO has been set as OUTPUT.");
+
+    //time = rospy.get_time()
+    //TIME_INC = 0.05
+    while (ros::ok())
+    {
+        ///if (rospy.get_time() > time)
+        //    ... time = time + TIME_INC 
+            
+        digitalWrite(LED_PIN, HIGH);
+        ROS_INFO("Set GPIO HIGH");
+        ros::Duration(1.0).sleep();
+        digitalWrite(LED_PIN, LOW);
+        ROS_INFO("Set GPIO LOW");
+        ros::Duration(1.0).sleep();
+    }
+}

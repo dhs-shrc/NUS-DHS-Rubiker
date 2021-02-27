@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/catkin_ws/install
+
+Name: rubiker
+Description: Description of rubiker
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy cv_bridge geometry_msgs image_transport message_generation nav_msgs sensor_msgs std_msgs actionlib_msgs tf
