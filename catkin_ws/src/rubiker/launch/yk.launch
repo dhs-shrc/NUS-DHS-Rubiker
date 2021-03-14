@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="rubiker" type="master" name="master" output="screen" args="THRESH_DEG"/>
+    <node pkg="rubiker" type="pid" name="pid1" output="screen" args="1 $(env PID1)"/>
+    <node pkg="rubiker" type="pid" name="pid2" output="screen" args="2 $(env PID2)"/>
+    <node pkg="rubiker" type="tacho" name="tacho1" output="screen"/>
+    <node pkg="rubiker" type="tacho" name="tacho2" output="screen"/>
+</launch>
